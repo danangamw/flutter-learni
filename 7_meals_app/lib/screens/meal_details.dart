@@ -19,9 +19,12 @@ class MealDetailsScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(meal.title),
         actions: [
-          IconButton(onPressed: () {
-            onToggleFavorites(meal);
-          }, icon: const Icon(Icons.star),),
+          IconButton(
+            onPressed: () {
+              onToggleFavorites(meal);
+            },
+            icon: const Icon(Icons.star),
+          ),
         ],
       ),
       body: SingleChildScrollView(
